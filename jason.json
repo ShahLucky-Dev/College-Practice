@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "name": "lucky",
+      "age": 20,
+      "id": 1
+    },
+    {
+      "name": "bunnny",
+      "age": 25,
+      "id": 2
+    }
+  ]
+}

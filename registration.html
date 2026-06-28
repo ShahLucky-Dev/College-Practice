@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Registration form</title>
+
+    <style>
+      body {
+        background-color: rgb(140, 234, 234);
+        font-family: Arial;
+        display: flex;
+        justify-content: center;
+      }
+      h2 {
+        font-family: Georgia;
+      }
+
+      #box {
+        border: 2px solid black;
+      }
+
+      #xml {
+        font-size: 20px;
+      }
+
+      #link {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="link">
+        <a id="xml" href="xml.xml">Students Details</a>
+        <a id="json" href="jason.json">Teacher Details</a>
+      </div>
+      <div id="box">
+        <h2>ENTER YOUR NAME:</h2>
+        <input type="text" placeholder="enter your name" required />
+
+        <h2>ENTER YOUR DOB:</h2>
+        <input type="date" placeholder="enter your dob" />
+
+        <h2>ENTER YOUR ADDRESS:</h2>
+        <textarea placeholder="enter your address"></textarea>
+
+        <h2>ENTER YOUR EMAIL:</h2>
+        <input type="email" placeholder="enter your email" required />
+
+        <h2>ENTER YOUR PASSWORD:</h2>
+        <input
+          type="password"
+          placeholder="enter password"
+          required
+        /><br /><br />
+
+        <h2>SELECT YOUR GENDER:</h2>
+        <input type="radio" name="gender" value="male" />male
+        <input type="radio" name="gender" value="female" />female
+
+        <h2>SELECT YOUR COURSE:</h2>
+        <select>
+          <option>bca</option>
+          <option>bba</option>
+          <option>btech</option>
+          <option>bcom</option>
+        </select>
+
+        <h2>SELECT YOUR HOBBY:</h2>
+        <br />
+        <input type="checkbox" name="hobby" />cricket
+        <input type="checkbox" name="hobby" />singing
+        <input type="checkbox" name="hobby" />dancing
+        <input type="checkbox" name="hobby" />fluet
+        <br />
+
+        <button id="btn">Submit</button>
+      </div>
+
+      <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+          alert("ragistration successfully");
+        });
+      </script>
+    </form>
+  </body>
+</html>
